@@ -1,2 +1,2 @@
 # ProjectGiaBao
-Project trên github đầu tiền của tui
+Project trên github đầu tiên của tui

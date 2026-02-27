@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <title>Đại học Trà Vinh</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8">
+<title>Profile Gia Bảo</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-        <nav>
-        <ul>
-            <li><a href="#home">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#schools">Các trường</a></li>
-            <li><a href="#video">Video</a></li>
-        </ul>
-    </nav>
+<nav>
+<div class="nav-container">
+<h2>Gia Bảo</h2>
 
-    <header>
-        <h1>ĐẠI HỌC TRÀ VINH</h1>
-        <p>Mang đến cơ hội học tập chất lượng cho cộng đồng</p>
-    </header>
+<ul>
+<li><a href="#about">Giới thiệu</a></li>
+<li><a href="#skills">Kỹ năng</a></li>
+<li><a href="#contact">Liên hệ</a></li>
+</ul>
+</div>
+</nav>
 
-    <section class="intro">
-        <img src="assets/tvuimage.jpg" alt="Đại học Trà Vinh" id="tvuImg">
 
-        <p>
-            Đại học Trà Vinh là Đại học công lập, có vai trò quan trọng trong
-            đào tạo nguồn nhân lực chất lượng cao cho khu vực Đồng bằng sông Cửu Long.
-            Trường đào tạo đa ngành, đa lĩnh vực, chú trọng nghiên cứu khoa học và
-            gắn kết với cộng đồng.
-        </p>
+<div class="container">
 
-        <button onclick="openTTSV()">Trang TTSV</button>
-        <button onclick="openTVU()">Trang chủ TVU</button>
-    </section>
+<!-- PROFILE -->
+<section id="about" class="card profile">
 
-        <section>
-    <h2>Các trường trực thuộc Đại học Trà Vinh</h2>
+<img src="assets/hinhcanhan.JPG" class="avatar">
 
-    <table>
-        <tr>
-            <th>STT</th>
-            <th>Tên trường</th>
-            <th>Lĩnh vực đào tạo</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Trường Y Dược</td>
-            <td>Y học, Dược học</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Trường Kỹ thuật Công nghệ</td>
-            <td>Kỹ thuật, Công nghệ</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>
-                Trường Ngôn ngữ – Văn hóa – Nghệ thuật
-                Khmer Nam Bộ
-            </td>
-            <td>Ngôn ngữ, Văn hóa, Nghệ thuật</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Trường Kinh tế – Luật</td>
-            <td>Kinh tế, Quản lý, Luật</td>
-        </tr>
-    </table>
+<div>
+<h1>NGÔ DƯƠNG GIA BẢO</h1>
+<p>Sinh viên CNTT - Đại học Trà Vinh</p>
+
+<p>📅 05/12/2006</p>
+<p>📞 0788919073</p>
+<p>📧 ngobaokakaka@gmail.com</p>
+
+<div class="social">
+
+<a href="https://www.facebook.com/giabao.ngoduong.1" target="_blank">
+Facebook
+</a>
+
+<a href="https://github.com/giabaeoz" target="_blank">
+GitHub
+</a>
+
+<a href="https://zalo.me/0788919073" target="_blank">
+Zalo
+</a>
+
+</div>
+
+</div>
+
 </section>
-   <section id="video">
-    <h2>Video giới thiệu Đại học Trà Vinh</h2>
-    <video src="assets/videotvu.mp4" controls></video>
+
+<!-- SKILLS -->
+<section id="skills" class="card">
+<h2>Kỹ năng</h2>
+
+<table>
+<tr><th>Kỹ năng</th><th>Mức độ</th></tr>
+<tr><td>HTML</td><td>Cơ bản</td></tr>
+<tr><td>CSS</td><td>Cơ bản</td></tr>
+<tr><td>JavaScript</td><td>Đang học</td></tr>
+</table>
+
 </section>
 
 
-    <footer>
-        <p>
-            Trang web tham khảo:
-            <a href="https://tvu.edu.vn" target="_blank">https://tvu.edu.vn</a>
-        </p>
-    </footer>
 
-    <script src="js/main.js"></script>
+<!-- MEDIA -->
+<section id="media" class="card">
+
+
+<video controls>
+    <source src="assets/videocanhan.MP4" type="video/mp4">
+    Trình duyệt không hỗ trợ video.
+</video>
+
+</section>
+</div>
+<!-- CONTACT -->
+<form class="contact-form">
+<h2>Liên hệ với tôi</h2>
+<label for="name">Họ và tên</label>
+<input type="text" id="name">
+
+<label for="email">Email</label>
+<input type="email" id="email">
+
+<label>Giới tính</label>
+<div class="option-group">
+    <label><input type="radio" name="gender"> Nam</label>
+    <label><input type="radio" name="gender"> Nữ</label>
+</div>
+
+<label>Sở thích</label>
+<div class="option-group">
+    <label><input type="checkbox"> Lập trình</label>
+    <label><input type="checkbox"> Chơi game</label>
+    <label><input type="checkbox"> Nghe nhạc</label>
+</div>
+
+<label for="message">Nội dung</label>
+<textarea id="message" rows="4"></textarea>
+
+<input type="submit" value="Gửi thông tin">
+
+</form>
+<footer>
+<p>© 2026 - Ngo Duong Gia Bao</p>
+</footer>
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
